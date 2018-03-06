@@ -1,3 +1,11 @@
 'use strict';
 
-angular.module('try',['blogList']);  //name of your app and included modules
+//name of your app and list of included modules
+angular.module('try',[
+    //external
+    'ngResource',
+    'ngRoute',
+
+    //internal
+    'blogList'
+]);
