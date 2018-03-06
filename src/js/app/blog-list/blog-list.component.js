@@ -5,7 +5,16 @@ angular.module('blogList').    //name of your module
         //template : "<div class=''><h1 class='new-class'> {{ title }} </h1><button ng-click='someClickTest()'>Click Me!</button></div>",
         templateUrl:'/templates/blog-list.html',
         controller : function($scope){
-            console.log("Hello")
+            var blogItems = [
+                {title : "Some title", id : 1, description : "This is a book."},
+                {title : "title", id : 2, description : "This is a book."},
+                {title : "tea", id : 3, description : "This is a book."},
+                {title : "lite", id : 4, description : "This is a book."},
+            ]
+
+            $scope.items = blogItems
+
+
             $scope.title = 'Hi there'
             $scope.clicks = 0
             $scope.someClickTest = function(){
