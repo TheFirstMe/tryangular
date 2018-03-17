@@ -1,4 +1,4 @@
 'use strict';
 
 //name of your module
-angular.module('blogList',["post"]);  
+angular.module('post',[]);  
